@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "cpy resoc/images/* public/open-graph/",
     "start": "next start",
     "lint": "next lint"
   },
@@ -14,7 +15,8 @@
     "react-dom": "17.0.2"
   },
   "devDependencies": {
-    "@resoc/create-img": "^0.2.6",
+    "@resoc/create-img": "^0.3.0",
+    "cpy-cli": "^3.1.1",
     "eslint": "7.32.0",
     "eslint-config-next": "11.1.2"
   }
