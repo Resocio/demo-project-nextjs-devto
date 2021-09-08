@@ -32,3 +32,6 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+/resoc/images/
+/public/open-graph/
