@@ -10,20 +10,9 @@
       "demoValue": "A picture is worth a thousand words"
     },
     {
-      "label": "Main image",
-      "name": "mainImageUrl",
-      "type": "imageUrl",
-      "demoValue": "https://resoc.io/assets/img/demo/photos/pexels-photo-371589.jpeg"
-    },
-    {
-      "name": "textColor",
-      "type": "color",
-      "demoValue": "#ffffff"
-    },
-    {
-      "name": "backgroundColor",
-      "type": "color",
-      "demoValue": "#20552a"
+      "name": "description",
+      "type": "Description",
+      "demoValue": "And so much to say!"
     }
   ]
 }
