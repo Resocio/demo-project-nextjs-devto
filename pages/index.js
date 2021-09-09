@@ -6,46 +6,41 @@ import socialImage from '../lib/social-image'
 export default function Home() {
   return (
     <div className={styles.container}>
-      <Head>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Automated social images in a static NextJS app
         </h1>
 
         <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
+          Demo project for automatic social images generation at build time.
         </p>
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
+          <a href="https://developers.facebook.com/tools/debug/" className={styles.card}>
+            <h2>View &rarr;</h2>
+            <p>Submit this URL to the Facebook debugger.</p>
           </a>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
+          <a href="" className={styles.card}>
+            <h2>Implement &rarr;</h2>
+            <p>Implement the same mechanism in your own NextJS app.</p>
           </a>
 
           <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            href="https://github.com/Resocio/demo-project-nextjs-devto"
             className={styles.card}
           >
-            <h2>Deploy &rarr;</h2>
+            <h2>Explore &rarr;</h2>
+            <p>Browse the code of this demo and see how it works.</p>
+          </a>
+
+          <a
+            href="https://www.npmjs.com/package/itdk"
+            className={styles.card}
+          >
+            <h2>Design &rarr;</h2>
             <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
+              Discover the Image Template Development Kit.
             </p>
           </a>
         </div>
@@ -53,13 +48,13 @@ export default function Home() {
 
       <footer className={styles.footer}>
         <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          href="https://resoc.io/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
+          Powered by Resoc{' '}
           <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+            <Image src="/resoc.png" alt="Resoc Logo" width={16} height={16} />
           </span>
         </a>
       </footer>
@@ -71,8 +66,8 @@ export async function getStaticProps(context) {
   return {
     props: {
       ...(await socialImage(
-        'Hello!',
-        'My homepage',
+        'Automated social images in a static NextJS app',
+        'Demo project',
         'homepage'
       ))
     }

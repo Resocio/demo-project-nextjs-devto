@@ -13,8 +13,8 @@ export async function getStaticProps(context) {
   return {
     props: {
       ...(await socialImage(
-        'Another page',
-        'This page is actually empty',
+        'Just another page',
+        'Nothing fancy, really',
         'another-page'
       ))
     }
