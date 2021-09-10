@@ -11,7 +11,7 @@
     },
     {
       "name": "description",
-      "type": "Description",
+      "type": "text",
       "demoValue": "And so much to say!"
     }
   ]
