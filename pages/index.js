@@ -21,7 +21,7 @@ export default function Home() {
             <p>Submit this URL to the Facebook debugger.</p>
           </a>
 
-          <a href="" className={styles.card}>
+          <a href="https://dev.to/philippe/static-automated-social-images-with-nextjs-2leo" className={styles.card}>
             <h2>Implement &rarr;</h2>
             <p>Implement the same mechanism in your own NextJS app.</p>
           </a>
